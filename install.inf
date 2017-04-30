@@ -2,7 +2,7 @@
 title=Markdown Table Format
 desc=Formats tables in Markdown files
 type=py-plugin
-subdir=cuda_markdown_table_format
+subdir=syn_markdown_table_format
 homepage=
 
 [ini1]

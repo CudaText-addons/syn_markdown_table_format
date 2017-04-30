@@ -6,7 +6,7 @@ from sw import *
 from .simple_markdown import table
 from . import format_proc
 
-format_proc.INI = 'cuda_markdown_table_format.json'
+format_proc.INI = 'syn_markdown_table_format.json'
 format_proc.MSG = '[MD Table Format] '
 
 

@@ -1,0 +1,22 @@
+[info]
+title=Markdown Table Format
+desc=Formats tables in Markdown files
+type=py-plugin
+subdir=cuda_markdown_table_format
+homepage=
+
+[ini1]
+section=Commands
+id=Markdown Table Format\Format
+params=run
+lexers=Markdown
+
+[ini2]
+section=Commands
+id=Markdown Table Format\Configure
+params=config_global
+
+[ini3]
+section=Commands
+id=Markdown Table Format\Configure (local)
+params=config_local

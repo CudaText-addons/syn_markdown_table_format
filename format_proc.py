@@ -3,11 +3,18 @@ import sys
 import os
 import shutil
 
-INI = 'jsformat.cfg'
-MSG = '[JS Format] '
+INI = 'syn_sample.cfg'
+MSG = '[Sample Format] '
 
 def ini_global():
-    return os.path.join(os.path.dirname(__file__), INI)
+    ini = os.path.join(os.path.dirname(__file__), INI)
+    ini0 = ini
+    n = ini0.rfind('.')
+    if n >= 0:
+        ini0 = ini0[:n] + '.sample' + ini0[n:]
+    if not os.path.isfile(ini) and os.path.isfile(ini0):
+        shutil.copyfile(ini0, ini)
+    return ini    
 
 def ini_local():
     fn = ed.get_filename()
